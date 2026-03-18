@@ -1,6 +1,10 @@
-﻿
-using Generic_collection;
-Console.OutputEncoding = System.Text.Encoding.UTF8;
+﻿using Generic_collection;
+using System;
+using System.Text;
+
+Console.OutputEncoding = Encoding.UTF8;
+Console.InputEncoding = Encoding.UTF8;
+
 while (true)
 {
     Console.WriteLine("\n===== MENU CHÍNH =====");
@@ -9,6 +13,7 @@ while (true)
     Console.WriteLine("======================");
     Console.WriteLine("1. Bài 1 - Tạo danh sách số nguyên");
     Console.WriteLine("2. Bài 2 - Tính tổng các phần tử");
+    Console.WriteLine("3. Bài 3 - Tìm số lớn nhất");
     Console.WriteLine("0. Thoát");
     Console.Write("Chọn bài: ");
 
@@ -18,6 +23,7 @@ while (true)
     {
         case "1": Bai01.Run(); break;
         case "2": Bai02.Run(); break;
+        case "3": Bai03.Run(); break;
         case "0": return;
         default: Console.WriteLine("Lựa chọn không hợp lệ!"); break;
     }
